@@ -1,0 +1,1659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/logos/favicon.png">
+
+    <title>All Programs | CountryEdu</title>
+
+    <meta
+      name="description"
+      content="Explore CountryEdu's career-focused technology and business programs."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <button
+  class="menu-btn"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+>
+  <i class="ri-menu-line"></i>
+</button>
+
+          <a href="index.html#hero" class="logo">
+            <img src="assets/images/logos/logo.png" alt="CountryEdu Logo" />
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="programs.html" class="active">Programs</a></li>
+            <li><a href="combos.html">Combo Packages</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+
+          <div class="nav-buttons">
+            <a href="https://lms.countryedu.com/" class="login-btn">Login</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+        <!-- Mobile Full-Screen Menu -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <div class="mobile-menu-top">
+
+        <a href="index.html" class="mobile-menu-logo">
+          <img src="assets/images/logos/logo.png" alt="CountryEdu Logo" />
+        </a>
+
+        <button class="mobile-menu-close" type="button" aria-label="Close navigation menu">
+          <i class="ri-close-line"></i>
+        </button>
+
+      </div>
+
+      <div class="mobile-menu-search">
+        <input type="text" id="mobile-search-input" placeholder="Search programs..." />
+        <button type="button" class="mobile-search-btn" aria-label="Search">
+          <i class="ri-search-line"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="programs.html" class="active">Programs</a></li>
+        <li><a href="combos.html">Combo Packages</a></li>
+        <li><a href="https://lms.countryedu.com/" class="mobile-login-btn">Login</a></li>
+      </ul>
+
+      <div class="mobile-menu-socials">
+        <a href="https://www.instagram.com/countryedu_/?hl=en"><i class="ri-instagram-line"></i></a>
+
+                    <a href="https://www.linkedin.com/company/countryedu-private-limited/?originalSubdomain=in"><i class="ri-linkedin-fill"></i></a>
+
+                    <a href="https://www.youtube.com/@countryeduacademy"><i class="ri-youtube-fill"></i></a>
+      </div>
+
+    </div>
+
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+    <main>
+      <!-- PROGRAMS HERO -->
+      <section class="programs-hero">
+        <div class="container">
+          <div class="hero-intro">
+            <p class="section-badge">OUR PROGRAMS</p>
+            <h1 class="section-title">Explore All <span>Programs</span></h1>
+            <p class="section-description">
+              Explore industry-focused programs designed to help you learn practical skills, build real projects, and become career-ready.
+            </p>
+          </div>
+
+          <!-- Search box -->
+          <div class="program-search scroll-reveal">
+            <i class="ri-search-line"></i>
+            <input
+              type="search"
+              id="program-search-input"
+              placeholder="Search for a Program, for example Python or Data Science"
+              aria-label="Search courses"
+            />
+          </div>
+
+          <p class="search-result" id="search-result"></p>
+
+          <!-- Category tabs -->
+          <div class="category-tabs scroll-reveal" id="category-tabs">
+            <button class="tab active" data-category="All Programs">
+              All Programs
+            </button>
+            <button class="tab" data-category="Software & Tech">
+              Software & Tech
+            </button>
+            <button class="tab" data-category="Backend Development">
+              Backend Development
+            </button>
+            <button class="tab" data-category="Mobile App Development">
+              Mobile App Development
+            </button>
+            <button class="tab" data-category="UI & UX Design">
+              UI & UX Design
+            </button>
+            <button class="tab" data-category="Non-Technical Programs">
+              Non-Technical Programs
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ALL PROGRAMS GRID SECTION -->
+      <section id="all-programs" class="programs-grid-section">
+        <div class="container">
+          <!-- Cards are added by js/programs.js -->
+          <div class="program-grid scroll-reveal" id="programs-grid"></div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <!-- TESTIMONIALS -->
+      <section id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Testimonials</span>
+
+            <h2 class="section-title">What Our <span>Students Say</span></h2>
+
+            <p class="section-description">
+              Real stories from students who transformed their careers with us.
+            </p>
+          </div>
+        </div>
+
+         <div class="testimonial-marquee">
+
+            <div class="testimonial-track">
+
+                <!-- Aayushi -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        I completed the Python program from CountryEdu and really liked how practical the sessions were. The concepts were explained clearly with hands-on examples.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/aayushi.jpg.jpeg" alt="aayushi">
+                        <div>
+                            <h4>Aayushi</h4>
+                            <span>Python Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aishwarya -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        The Data Science & AI program was a great learning experience. I especially liked the machine learning projects and practical assignments.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/aishwarya.jpg.jpeg" alt="Aishwarya">
+                        <div>
+                            <h4>Aishwarya</h4>
+                            <span>Data Science Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akansha Mishra -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        I enrolled in the Web Development combo and learned HTML, CSS, React, Node.js and MongoDB. It gave me a proper understanding of both frontend and backend development.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/akanksha.jpg.jpeg" alt="Akansha Mishra">
+                        <div>
+                            <h4>Akansha Mishra</h4>
+                            <span>Full Stack Engineer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akshit -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        CountryEdu made Advanced Excel much easier for me. 
+                        The practical approach helped me understand formulas, dashboards
+                         and data analysis much better.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/akshit.jpg.jpeg" alt="Akshit">
+                        <div>
+                            <h4>Akshit</h4>
+                            <span>Data Analyst</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ankur -->
+<div class="testimonial-card">
+    <div class="stars">★★★★★</div>
+        <p>
+            I completed the Python program from CountryEdu and really liked how practical the sessions were. The concepts were explained clearly with hands-on examples.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/ankur.jpg.jpeg" alt="Ankur">
+            <div>
+                <h4>Ankur</h4>
+                <span>Python Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ashish James -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Data Science & AI program was a great learning experience. I especially liked the machine learning projects and practical assignments.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/ashish-james.jpg.jpeg" alt="Ashish James">
+            <div>
+                <h4>Ashish James</h4>
+                <span>Data Analyst - II</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ayushi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in the Web Development combo and learned HTML, CSS, React, Node.js and MongoDB. It gave me a proper understanding of both frontend and backend development.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/Ayushi.jpg.jpeg" alt="Ayushi">
+            <div>
+                <h4>Ayushi</h4>
+                <span>Web Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bhavika -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu made Advanced Excel much easier for me. The practical approach helped me understand formulas, dashboards and data analysis much better.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/bhavika.jpg.jpeg" alt="Bhavika">
+            <div>
+                <h4>Bhavika</h4>
+                <span>Advanced Excel Trainer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enguva -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Digital Marketing program and learned about SEO, social media marketing, paid campaigns and analytics. Very useful for someone starting in marketing.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/enguva.jpg.jpeg" alt="Enguva">
+            <div>
+                <h4>Enguva</h4>
+                <span>Marketing Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gamer -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The DSA with Python program was really helpful for improving my problem-solving skills. The explanations and coding practice were very useful.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/gamer.jpg.jpeg" alt="Gamer">
+            <div>
+                <h4>Gamer</h4>
+                <span>Core Python Developer </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Harsha -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I took the Graphic Design program and learned a lot about design principles, branding, typography and visual communication. The projects made the learning more interesting.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/harsha.jpg.jpeg" alt="Harsha">
+            <div>
+                <h4>Harsha</h4>
+                <span>Graphic Designer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hima Bindu -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Python & Data Analytics combo was exactly what I was looking for. I got to learn Python, Pandas, visualization and practical data analysis together.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/hima-bindu.jpg.jpeg" alt="Hima Bindu">
+            <div>
+                <h4>Hima Bindu</h4>
+                <span>Business Analyst </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kshitij -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the Cloud Computing with AWS program and finally understood concepts like EC2, S3, IAM and VPC. The practical approach was the best part.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/kshitij.jpg.jpeg" alt="Kshitij">
+            <div>
+                <h4>Kshitij</h4>
+                <span>Cloud Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kushank -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu’s Canva program was simple, creative and easy to follow. I can now create professional social media posts and marketing designs on my own.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/kushank.jpg.jpeg" alt="Kushank">
+            <div>
+                <h4>Kushank</h4>
+                <span>Desinger & Architecture</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lakshay -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Machine Learning Fundamentals program and really enjoyed the practical implementation of different algorithms.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/lakshay.jpg.jpeg" alt="Lakshay">
+            <div>
+                <h4>Lakshay</h4>
+                <span>Machine Learning Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Likshitha -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The UI/UX and Product Design combo gave me a much better understanding of user research, wireframing, Figma and design systems.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/likshitha.jpg.jpeg" alt="Likshitha">
+            <div>
+                <h4>Likshitha</h4>
+                <span>Chief Product Designer </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mahi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in the React.js Development program and found the component-based approach and project work very useful. It improved my frontend development skills.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/mahi.jpg.jpeg" alt="Mahi">
+            <div>
+                <h4>Mahi</h4>
+                <span>Frontend Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Miryala -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Financial Analysis program was very informative. I learned financial statements, ratio analysis, forecasting and financial modeling in a structured way.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/miryala.jpg.jpeg" alt="Miryala">
+            <div>
+                <h4>Miryala</h4>
+                <span>Finance Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neha Heer -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the AI Tools program and discovered so many useful AI tools for productivity, content creation and automation. Very relevant in today’s environment.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/neha-heer.jpg.jpeg" alt="Neha Heer">
+            <div>
+                <h4>Neha Heer</h4>
+                <span>AI Tool Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nishant -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The MERN-style Web Development combo was a great experience. Learning React, Node, Express and MongoDB together helped me understand how complete web applications are built.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/nishant.jpg.jpeg" alt="Nishant">
+            <div>
+                <h4>Nishant</h4>
+                <span>Full Stack Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palak Sharma -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the SEO program to improve my digital marketing knowledge and learned keyword research, on-page SEO, technical SEO and analytics. Good practical content.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/palak-sharma.jpg.jpeg" alt="Palak Sharma">
+            <div>
+                <h4>Palak Sharma</h4>
+                <span>SEO Expert</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prachi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Deep Learning program was challenging initially, but the concepts were explained step by step. CNNs, NLP and model deployment were particularly interesting.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/prachi.jpg.jpeg" alt="Prachi">
+            <div>
+                <h4>Prachi</h4>
+                <span>AI/ML Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pratyusha -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu’s Business Analytics program helped me understand how data can actually support business decisions. Power BI and dashboard creation were my favorite parts.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/pratyusha.jpg.jpeg" alt="Pratyusha">
+            <div>
+                <h4>Pratyusha</h4>
+                <span>Business Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Radhika -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the C-Programming course as a beginner and found it very easy to follow. It gave me a strong foundation in programming logic.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/radhika.jpg.jpeg" alt="Radhika">
+            <div>
+                <h4>Radhika</h4>
+                <span>C Programming Student</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rishabh Tyagi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The AI & Generative AI combo was one of the best learning experiences for me. Prompt engineering, RAG and AI agents were explained in a practical way.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/rishabh-tyagi.jpg.jpeg" alt="Rishabh Tyagi">
+            <div>
+                <h4>Rishabh Tyagi</h4>
+                <span>AI Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sahil -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in Performance Marketing and learned about Google Ads, Meta Ads, conversion tracking and campaign optimization. The course was very industry-oriented.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sahil.jpg.jpeg" alt="Sahil">
+            <div>
+                <h4>Sahil</h4>
+                <span>Marketing Expert - II </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sai Vivek -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Database Management System program helped me understand SQL, database design, normalization and CRUD operations much better.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sai-vivek.jpg.jpeg" alt="Sai Vivek">
+            <div>
+                <h4>Sai Vivek</h4>
+                <span>Database Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sanskriti -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Flutter Development program and really enjoyed building mobile interfaces. Learning widgets, APIs and Firebase was especially useful.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sanskriti.jpg.jpeg" alt="Sanskriti">
+            <div>
+                <h4>Sanskriti</h4>
+                <span>Flutter Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sanya Bajaj -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Canva and Digital Marketing combo was very useful for content creation. Now I can design creatives and understand how to use them in marketing campaigns.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sanya-bajaj.jpg.jpeg" alt="Sanya Bajaj">
+            <div>
+                <h4>Sanya Bajaj</h4>
+                <span>Product Designer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sejal -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Advanced Machine Learning & Model Optimization program helped me understand hyperparameter tuning, ensemble methods and model evaluation in much more depth.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sejal.jpg.jpeg" alt="Sejal">
+            <div>
+                <h4>Sejal</h4>
+                <span>Junior ML Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shivam Rawat -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in the PHP program and learned how to build dynamic websites using PHP and MySQL. The CRUD and API concepts were explained well.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/shivam-rawat.jpg.jpeg" alt="Shivam Rawat">
+            <div>
+                <h4>Shivam Rawat</h4>
+                <span>PHP Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shounak -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The R-Programming course was a good experience for learning data analysis and visualization. I especially enjoyed working with data frames and ggplot2.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/shounak.jpg.jpeg" alt="Shounak">
+            <div>
+                <h4>Shounak</h4>
+                <span>Business Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simranpreet -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu’s Web Development combo was worth it for me. Instead of learning technologies separately, I got to understand how they connect to build a complete website.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/simranpreet.jpg.jpeg" alt="Simranpreet">
+            <div>
+                <h4>Simranpreet</h4>
+                <span>Web Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Srivinda -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Julia program to explore high-performance computing and data analysis. The practical exercises made the language easier to understand.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/srivinda.jpg.jpeg" alt="Srivinda">
+            <div>
+                <h4>Srivinda</h4>
+                <span>Julia Programming Student</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sunil -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Digital Design program improved my understanding of layouts, typography, colors and branding. I also got more confident using design tools.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sunil.jpg.jpeg" alt="Sunil">
+            <div>
+                <h4>Sunil</h4>
+                <span>Designer - I</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Surleen -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the Generative AI & Prompt Engineering program and learned how to write much better prompts and build useful AI workflows. Very relevant and practical.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/surleen.jpg.jpeg" alt="Surleen">
+            <div>
+                <h4>Surleen</h4>
+                <span>Prompt Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tanish -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The AI Agents & Advanced Generative AI program was really interesting. Learning about tool calling, RAG, memory and multi-agent systems opened up a completely new area for me.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/tanish.jpg.jpeg" alt="Tanish">
+            <div>
+                <h4>Tanish</h4>
+                <span>AI Engineer
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tanishqa -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the SEO and Performance Marketing combo and found the combination very useful. I learned both organic and paid approaches to digital growth.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/tanishqa.jpg.jpeg" alt="Tanishqa">
+            <div>
+                <h4>Tanishqa</h4>
+                <span>SEO Expert - I</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Taniya -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Machine Learning Deployment & MLOps program helped me understand what happens after a model is trained. Docker, APIs, monitoring and deployment were particularly useful.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/taniya.jpg.jpeg" alt="Taniya">
+            <div>
+                <h4>Taniya</h4>
+                <span>ML Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tanu Saini -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I took the Product Design & User Experience program and really enjoyed the complete design process from research and user flows to prototypes and usability testing.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/tanu-saini.jpg.jpeg" alt="Tanu Saini">
+            <div>
+                <h4>Tanu Saini</h4>
+                <span>UI/UX Designer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vedansh -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Cloud + DevOps combo was a great learning experience. AWS, Docker and Kubernetes together gave me a much better understanding of modern application deployment.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/vedansh.jpg.jpeg" alt="Vedansh">
+            <div>
+                <h4>Vedansh</h4>
+                <span>DevOps Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Venkant -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Python & Data Analytics program and found the combination of programming, data cleaning, visualization and EDA very useful for real-world projects.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/venkant.jpg.jpeg" alt="Venkant">
+            <div>
+                <h4>Venkant</h4>
+                <span>Junior Data Analyst - I </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vikas -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the Cybersecurity Fundamentals program and gained a good understanding of networking, threats, authentication and basic security practices.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/vikas.jpg.jpeg" alt="Vikas">
+            <div>
+                <h4>Vikas</h4>
+                <span>Junior Cybersecurity Engineer - I</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vipin -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Ethical Hacking & Penetration Testing program gave me a completely different perspective on cybersecurity. The methodology and security testing concepts were very interesting.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/vipin.jpg.jpeg" alt="Vipin">
+            <div>
+                <h4>Vipin</h4>
+                <span>Ethical Hacker - I </span>
+            </div>
+        </div>
+    </div>
+
+                <!-- Duplicate set for seamless infinite loop -->
+                <!-- Aayushi -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        I completed the Python program from CountryEdu and really liked how practical the sessions were. The concepts were explained clearly with hands-on examples.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/aayushi.jpg.jpeg" alt="aayushi">
+                        <div>
+                            <h4>Aayushi</h4>
+                            <span>Python Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aishwarya -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        The Data Science & AI program was a great learning experience. I especially liked the machine learning projects and practical assignments.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/aishwarya.jpg.jpeg" alt="Aishwarya">
+                        <div>
+                            <h4>Aishwarya</h4>
+                            <span>Data Science Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akansha Mishra -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        I enrolled in the Web Development combo and learned HTML, CSS, React, Node.js and MongoDB. It gave me a proper understanding of both frontend and backend development.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/akanksha.jpg.jpeg" alt="Akansha Mishra">
+                        <div>
+                            <h4>Akansha Mishra</h4>
+                            <span>Full Stack Engineer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akshit -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        CountryEdu made Advanced Excel much easier for me. 
+                        The practical approach helped me understand formulas, dashboards
+                         and data analysis much better.
+                    </p>
+                    <div class="student">
+                        <img src="assets/images/students_testimonials/akshit.jpg.jpeg" alt="Akshit">
+                        <div>
+                            <h4>Akshit</h4>
+                            <span>Data Analyst</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ankur -->
+<div class="testimonial-card">
+    <div class="stars">★★★★★</div>
+        <p>
+            I completed the Python program from CountryEdu and really liked how practical the sessions were. The concepts were explained clearly with hands-on examples.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/ankur.jpg.jpeg" alt="Ankur">
+            <div>
+                <h4>Ankur</h4>
+                <span>Python Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ashish James -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Data Science & AI program was a great learning experience. I especially liked the machine learning projects and practical assignments.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/ashish-james.jpg.jpeg" alt="Ashish James">
+            <div>
+                <h4>Ashish James</h4>
+                <span>Data Analyst - II</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ayushi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in the Web Development combo and learned HTML, CSS, React, Node.js and MongoDB. It gave me a proper understanding of both frontend and backend development.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/Ayushi.jpg.jpeg" alt="Ayushi">
+            <div>
+                <h4>Ayushi</h4>
+                <span>Web Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bhavika -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu made Advanced Excel much easier for me. The practical approach helped me understand formulas, dashboards and data analysis much better.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/bhavika.jpg.jpeg" alt="Bhavika">
+            <div>
+                <h4>Bhavika</h4>
+                <span>Advanced Excel Trainer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enguva -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Digital Marketing program and learned about SEO, social media marketing, paid campaigns and analytics. Very useful for someone starting in marketing.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/enguva.jpg.jpeg" alt="Enguva">
+            <div>
+                <h4>Enguva</h4>
+                <span>Marketing Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gamer -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The DSA with Python program was really helpful for improving my problem-solving skills. The explanations and coding practice were very useful.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/gamer.jpg.jpeg" alt="Gamer">
+            <div>
+                <h4>Gamer</h4>
+                <span>Core Python Developer </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Harsha -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I took the Graphic Design program and learned a lot about design principles, branding, typography and visual communication. The projects made the learning more interesting.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/harsha.jpg.jpeg" alt="Harsha">
+            <div>
+                <h4>Harsha</h4>
+                <span>Graphic Designer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hima Bindu -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Python & Data Analytics combo was exactly what I was looking for. I got to learn Python, Pandas, visualization and practical data analysis together.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/hima-bindu.jpg.jpeg" alt="Hima Bindu">
+            <div>
+                <h4>Hima Bindu</h4>
+                <span>Business Analyst </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kshitij -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the Cloud Computing with AWS program and finally understood concepts like EC2, S3, IAM and VPC. The practical approach was the best part.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/kshitij.jpg.jpeg" alt="Kshitij">
+            <div>
+                <h4>Kshitij</h4>
+                <span>Cloud Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kushank -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu’s Canva program was simple, creative and easy to follow. I can now create professional social media posts and marketing designs on my own.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/kushank.jpg.jpeg" alt="Kushank">
+            <div>
+                <h4>Kushank</h4>
+                <span>Desinger & Architecture</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lakshay -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Machine Learning Fundamentals program and really enjoyed the practical implementation of different algorithms.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/lakshay.jpg.jpeg" alt="Lakshay">
+            <div>
+                <h4>Lakshay</h4>
+                <span>Machine Learning Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Likshitha -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The UI/UX and Product Design combo gave me a much better understanding of user research, wireframing, Figma and design systems.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/likshitha.jpg.jpeg" alt="Likshitha">
+            <div>
+                <h4>Likshitha</h4>
+                <span>Chief Product Designer </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mahi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in the React.js Development program and found the component-based approach and project work very useful. It improved my frontend development skills.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/mahi.jpg.jpeg" alt="Mahi">
+            <div>
+                <h4>Mahi</h4>
+                <span>Frontend Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Miryala -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Financial Analysis program was very informative. I learned financial statements, ratio analysis, forecasting and financial modeling in a structured way.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/miryala.jpg.jpeg" alt="Miryala">
+            <div>
+                <h4>Miryala</h4>
+                <span>Finance Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neha Heer -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the AI Tools program and discovered so many useful AI tools for productivity, content creation and automation. Very relevant in today’s environment.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/neha-heer.jpg.jpeg" alt="Neha Heer">
+            <div>
+                <h4>Neha Heer</h4>
+                <span>AI Tool Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nishant -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The MERN-style Web Development combo was a great experience. Learning React, Node, Express and MongoDB together helped me understand how complete web applications are built.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/nishant.jpg.jpeg" alt="Nishant">
+            <div>
+                <h4>Nishant</h4>
+                <span>Full Stack Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palak Sharma -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the SEO program to improve my digital marketing knowledge and learned keyword research, on-page SEO, technical SEO and analytics. Good practical content.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/palak-sharma.jpg.jpeg" alt="Palak Sharma">
+            <div>
+                <h4>Palak Sharma</h4>
+                <span>SEO Expert</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prachi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Deep Learning program was challenging initially, but the concepts were explained step by step. CNNs, NLP and model deployment were particularly interesting.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/prachi.jpg.jpeg" alt="Prachi">
+            <div>
+                <h4>Prachi</h4>
+                <span>AI/ML Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pratyusha -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu’s Business Analytics program helped me understand how data can actually support business decisions. Power BI and dashboard creation were my favorite parts.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/pratyusha.jpg.jpeg" alt="Pratyusha">
+            <div>
+                <h4>Pratyusha</h4>
+                <span>Business Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Radhika -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the C-Programming course as a beginner and found it very easy to follow. It gave me a strong foundation in programming logic.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/radhika.jpg.jpeg" alt="Radhika">
+            <div>
+                <h4>Radhika</h4>
+                <span>C Programming Student</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rishabh Tyagi -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The AI & Generative AI combo was one of the best learning experiences for me. Prompt engineering, RAG and AI agents were explained in a practical way.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/rishabh-tyagi.jpg.jpeg" alt="Rishabh Tyagi">
+            <div>
+                <h4>Rishabh Tyagi</h4>
+                <span>AI Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sahil -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in Performance Marketing and learned about Google Ads, Meta Ads, conversion tracking and campaign optimization. The course was very industry-oriented.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sahil.jpg.jpeg" alt="Sahil">
+            <div>
+                <h4>Sahil</h4>
+                <span>Marketing Expert - II </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sai Vivek -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Database Management System program helped me understand SQL, database design, normalization and CRUD operations much better.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sai-vivek.jpg.jpeg" alt="Sai Vivek">
+            <div>
+                <h4>Sai Vivek</h4>
+                <span>Database Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sanskriti -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Flutter Development program and really enjoyed building mobile interfaces. Learning widgets, APIs and Firebase was especially useful.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sanskriti.jpg.jpeg" alt="Sanskriti">
+            <div>
+                <h4>Sanskriti</h4>
+                <span>Flutter Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sanya Bajaj -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Canva and Digital Marketing combo was very useful for content creation. Now I can design creatives and understand how to use them in marketing campaigns.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sanya-bajaj.jpg.jpeg" alt="Sanya Bajaj">
+            <div>
+                <h4>Sanya Bajaj</h4>
+                <span>Product Designer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sejal -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Advanced Machine Learning & Model Optimization program helped me understand hyperparameter tuning, ensemble methods and model evaluation in much more depth.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sejal.jpg.jpeg" alt="Sejal">
+            <div>
+                <h4>Sejal</h4>
+                <span>Junior ML Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shivam Rawat -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I enrolled in the PHP program and learned how to build dynamic websites using PHP and MySQL. The CRUD and API concepts were explained well.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/shivam-rawat.jpg.jpeg" alt="Shivam Rawat">
+            <div>
+                <h4>Shivam Rawat</h4>
+                <span>PHP Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shounak -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The R-Programming course was a good experience for learning data analysis and visualization. I especially enjoyed working with data frames and ggplot2.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/shounak.jpg.jpeg" alt="Shounak">
+            <div>
+                <h4>Shounak</h4>
+                <span>Business Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simranpreet -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            CountryEdu’s Web Development combo was worth it for me. Instead of learning technologies separately, I got to understand how they connect to build a complete website.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/simranpreet.jpg.jpeg" alt="Simranpreet">
+            <div>
+                <h4>Simranpreet</h4>
+                <span>Web Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Srivinda -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Julia program to explore high-performance computing and data analysis. The practical exercises made the language easier to understand.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/srivinda.jpg.jpeg" alt="Srivinda">
+            <div>
+                <h4>Srivinda</h4>
+                <span>Julia Programming Student</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sunil -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Digital Design program improved my understanding of layouts, typography, colors and branding. I also got more confident using design tools.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/sunil.jpg.jpeg" alt="Sunil">
+            <div>
+                <h4>Sunil</h4>
+                <span>Designer - I</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Surleen -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the Generative AI & Prompt Engineering program and learned how to write much better prompts and build useful AI workflows. Very relevant and practical.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/surleen.jpg.jpeg" alt="Surleen">
+            <div>
+                <h4>Surleen</h4>
+                <span>Prompt Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tanish -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The AI Agents & Advanced Generative AI program was really interesting. Learning about tool calling, RAG, memory and multi-agent systems opened up a completely new area for me.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/tanish.jpg.jpeg" alt="Tanish">
+            <div>
+                <h4>Tanish</h4>
+                <span>AI Engineer
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tanishqa -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the SEO and Performance Marketing combo and found the combination very useful. I learned both organic and paid approaches to digital growth.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/tanishqa.jpg.jpeg" alt="Tanishqa">
+            <div>
+                <h4>Tanishqa</h4>
+                <span>SEO Expert - I</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Taniya -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Machine Learning Deployment & MLOps program helped me understand what happens after a model is trained. Docker, APIs, monitoring and deployment were particularly useful.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/taniya.jpg.jpeg" alt="Taniya">
+            <div>
+                <h4>Taniya</h4>
+                <span>ML Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tanu Saini -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I took the Product Design & User Experience program and really enjoyed the complete design process from research and user flows to prototypes and usability testing.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/tanu-saini.jpg.jpeg" alt="Tanu Saini">
+            <div>
+                <h4>Tanu Saini</h4>
+                <span>UI/UX Designer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vedansh -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Cloud + DevOps combo was a great learning experience. AWS, Docker and Kubernetes together gave me a much better understanding of modern application deployment.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/vedansh.jpg.jpeg" alt="Vedansh">
+            <div>
+                <h4>Vedansh</h4>
+                <span>DevOps Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Venkant -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I completed the Python & Data Analytics program and found the combination of programming, data cleaning, visualization and EDA very useful for real-world projects.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/venkant.jpg.jpeg" alt="Venkant">
+            <div>
+                <h4>Venkant</h4>
+                <span>Junior Data Analyst - I </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vikas -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            I joined the Cybersecurity Fundamentals program and gained a good understanding of networking, threats, authentication and basic security practices.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/vikas.jpg.jpeg" alt="Vikas">
+            <div>
+                <h4>Vikas</h4>
+                <span>Junior Cybersecurity Engineer - I</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vipin -->
+    <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Ethical Hacking & Penetration Testing program gave me a completely different perspective on cybersecurity. The methodology and security testing concepts were very interesting.
+        </p>
+        <div class="student">
+            <img src="assets/images/students_testimonials/vipin.jpg.jpeg" alt="Vipin">
+            <div>
+                <h4>Vipin</h4>
+                <span>Ethical Hacker - I </span>
+            </div>
+        </div>
+    </div>
+                
+
+            </div>
+
+</div>
+      </section>
+
+      <!-- TRUSTED BY LEARNERS -->
+      <section id="trusted">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Trusted by Learners</span>
+
+            <h2 class="section-title">
+              Learners From <span>Leading Companies</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="company-marquee">
+
+                <div class="company-track">
+
+                    <img src="assets/images/trusted_learners_logo/amazon.jpg" alt="Amazon">
+                    <img src="assets/images/trusted_learners_logo/google.jpg" alt="Google">
+                    <img src="assets/images/trusted_learners_logo/microsoft.jpg" alt="Microsoft">
+                    <img src="assets/images/trusted_learners_logo/adobe.jpg" alt="Adobe">
+                    <img src="assets/images/trusted_learners_logo/flipkart.jpg" alt="Flipkart">
+                    <img src="assets/images/trusted_learners_logo/oracle.jpg" alt="Oracle">
+                    <img src="assets/images/trusted_learners_logo/ibm.jpg" alt="IBM">
+                    <img src="assets/images/trusted_learners_logo/zoho.jpg" alt="Zoho">
+                    <img src="assets/images/trusted_learners_logo/tcs.jpg" alt="TCS">
+                    <img src="assets/images/trusted_learners_logo/accenture.jpg" alt="Accenture">
+                    <img src="assets/images/trusted_learners_logo/capgemini.jpg" alt="Capgemini">
+                    <img src="assets/images/trusted_learners_logo/congnizant.jpg" alt="Cognizant">
+                    <img src="assets/images/trusted_learners_logo/deloitte.jpg" alt="Deloitte">
+                    <img src="assets/images/trusted_learners_logo/hcl.jpg" alt="HCL">
+                    <img src="assets/images/trusted_learners_logo/infosys.jpg" alt="Infosys">
+                    <img src="assets/images/trusted_learners_logo/kpmg.jpg" alt="KPMG">
+                    <img src="assets/images/trusted_learners_logo/tech-Mahindra.jpg" alt="Tech Mahindra">
+                    <img src="assets/images/trusted_learners_logo/wipro.jpg" alt="Wipro">
+
+                    <!-- Duplicate set for seamless infinite loop -->
+
+                    <img src="assets/images/trusted_learners_logo/amazon.jpg" alt="Amazon">
+                    <img src="assets/images/trusted_learners_logo/google.jpg" alt="Google">
+                    <img src="assets/images/trusted_learners_logo/microsoft.jpg" alt="Microsoft">
+                    <img src="assets/images/trusted_learners_logo/adobe.jpg" alt="Adobe">
+                    <img src="assets/images/trusted_learners_logo/flipkar.jpg" alt="Flipkart">
+                    <img src="assets/images/trusted_learners_logo/oracle.jpg" alt="Oracle">
+                    <img src="assets/images/trusted_learners_logo/ibm.jpg" alt="IBM">
+                    <img src="assets/images/trusted_learners_logo/zoho.jpg" alt="Zoho">
+                    <img src="assets/images/trusted_learners_logo/tcs.jpg" alt="TCS">
+                    <img src="assets/images/trusted_learners_logo/accenture.jpg" alt="Accenture">
+                    <img src="assets/images/trusted_learners_logo/capgemini.jpg" alt="Capgemini">
+                    <img src="assets/images/trusted_learners_logo/congnizant.jpg" alt="Cognizant">
+                    <img src="assets/images/trusted_learners_logo/deloitte.jpg" alt="Deloitte">
+                    <img src="assets/images/trusted_learners_logo/hcl.jpg" alt="HCL">
+                    <img src="assets/images/trusted_learners_logo/infosys.jpg" alt="Infosys">
+                    <img src="assets/images/trusted_learners_logo/kpmg.jpg" alt="KPMG">
+                    <img src="assets/images/trusted_learners_logo/tech-Mahindra.jpg" alt="Tech Mahindra">
+                    <img src="assets/images/trusted_learners_logo/wipro.jpg" alt="Wipro">
+                </div>
+
+            </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/images/logos/logo.png" alt="CountryEdu Logo" />
+            </a>
+
+            <p>
+              Learn today, build tomorrow with practical and career-focused
+              programs.
+            </p>
+
+            <div class="social-links">
+
+              <a href="https://www.instagram.com/countryedu_/?hl=en" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/company/countryedu-private-limited/?originalSubdomain=in" aria-label="LinkedIn">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+
+              <a href="https://www.youtube.com/@countryeduacademy" aria-label="YouTube">
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="combos.html">Combo Packages</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Popular Programs</h3>
+
+            <ul>
+              <li><a href="combos.html">Web Development</a></li>
+              <li><a href="program.html?name=Python">Python</a></li>
+              <li><a href="program.html?name=Python%20%26%20Data%20Analysis">Python & Data Analysis</a></li>
+              <li><a href="program.html?name=Power%20BI">Power BI</a></li>
+              <li><a href="program.html?name=Digital%20Marketing">Digital Marketing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact</h3>
+
+            <ul>
+              <li>
+                <i class="ri-phone-line"></i>
+                +91 9151179111
+              </li>
+
+              <li>
+                <i class="ri-mail-line"></i>
+                info@countryedu.com
+              </li>
+
+              <li>
+                <i class="ri-map-pin-line"></i>
+                India
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 CountryEdu. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript only for this page -->
+    <script src="js/main.js"></script>
+    <script src="js/programs.js"></script>
+  </body>
+</html>
