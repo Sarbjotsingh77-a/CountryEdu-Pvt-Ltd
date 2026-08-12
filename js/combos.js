@@ -53,7 +53,7 @@ const combos = [
 
     {
         title: "Marketing Specialist",
-        image: "assets/images/combos/Marketer.png",
+        image: "assets/images/combos/marketer.png",
        description: "• Digital Marketing<br>• SEO<br>• Performance Marketing<br>• Canva"
     },
 
