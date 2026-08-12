@@ -502,7 +502,7 @@ html{
   max-width: 100%;
   text-align: left;
   margin: 0 0 22px;
-  color: #374151;
+  color: #151c27;
   line-height: 1.6;
   text-shadow: none;
 }
@@ -538,9 +538,10 @@ html{
 
 @media (max-width:768px){
   .combo-hero{
-    margin-top:82px;
-    min-height:640px;
-    padding:60px 0 60px;
+    margin-top:70px;
+    min-height:620px;
+    padding:40px 0 60px;
+    background-position:left center;
   }
 
   #all-programs.combo-hero .hero-copy{
@@ -582,8 +583,8 @@ html{
 
 @media (max-width:480px){
   .combo-hero{
-    min-height:540px;
-    padding:110px 0 40px;
+    min-height:480px;
+    padding:30px 0 40px;
   }
 
   #all-programs.combo-hero .section-title{
